@@ -1,0 +1,95 @@
+/* Algunos estilos de reseteo propios */
+
+/* quitar el margin y padding por defecto y aplicar box-sizing a todo */
+* {box-sizing:border-box;margin: 0;padding: 0}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* limpiar listas */
+ul, ol {list-style: none}
+
+/* limpiar enlaces */
+a {text-decoration: none; color: teal}
+
+/* margenes de h */
+h1, h2, h3, h4, h5, h6 {margin: 0}
+
+/* color de la selección */
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* correcciones de display block */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+img {
+    display: block;
+}
+
+/* quitar el espacio detectado debajo de algunas etiquetas */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/* quitar estilos por defecto de fieldset. */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* solo permiter el escalado vertical en las textareas */
+
+textarea { resize: vertical;}
+
+/* clase de ayuda para limpiar floats */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Estilos para el cartel de navegadores antiguos
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
